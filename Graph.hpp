@@ -2,9 +2,17 @@
 #define GRAPH_HPP
 #include <string>
 #include <vector>
+#include <map>
+#include <list>
 
 class Graph {
 private:
+    struct Edge
+    {
+        std::string to;
+        unsigned long weight;
+    };
+    std::map<std::string, std::list<Edge>> adjList;
 public:
     void addVertex(std::string label);
     void addEdge(std::string label1, std::string label2, unsigned long weight);
