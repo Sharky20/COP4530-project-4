@@ -9,7 +9,7 @@ private:
 public:
     PriorityQueue(){}
     ~PriorityQueue(){}
-
+    int size();
     bool empty();
     void insert(T e);
     T front();

@@ -5,6 +5,7 @@
 template <typename T>
 class MinHeap {
 private:
+    std::vector<T> v;
     bool hasLeftChild(int index);
     bool hasRightChild(int index);
     bool hasParent(int index);
@@ -15,6 +16,7 @@ private:
     int getParentIndex(int index);
 public:
     T min() const;
+    int size();
     void removeMin();
     void insert(T d);
     bool empty();

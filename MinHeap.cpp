@@ -1,4 +1,8 @@
 #include "MinHeap.hpp"
+#include <string>
+
+template class MinHeap<int>;
+template class MinHeap<std::pair<unsigned long, std::string>>;
 
 template <typename T>
 bool MinHeap<T>::hasLeftChild(int index) {
@@ -76,4 +80,9 @@ void MinHeap<T>::insert(T d) {
 template <typename T>
 bool MinHeap<T>::empty() {
     return v.empty();
+}
+
+template <typename T>
+int MinHeap<T>::size() {
+    return v.size();
 }

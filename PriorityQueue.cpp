@@ -1,4 +1,8 @@
 #include "PriorityQueue.hpp"
+#include <string>
+
+template class PriorityQueue<int>;
+template class PriorityQueue<std::pair<unsigned long, std::string>>;
 
 template <typename T>
 bool PriorityQueue<T>::empty() {
@@ -18,4 +22,9 @@ T PriorityQueue<T>::front() {
 template <typename T>
 void PriorityQueue<T>::pop() {
     hp.removeMin();
+}
+
+template <typename T>
+int PriorityQueue<T>::size() {
+    return hp.size();
 }
