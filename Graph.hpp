@@ -7,13 +7,14 @@
 
 class Graph {
 private:
-    struct Edge
-    {
+    struct Edge {
         std::string to;
         unsigned long weight;
     };
     std::map<std::string, std::list<Edge>> adjList;
 public:
+    Graph() {}
+    ~Graph() {}
     void addVertex(std::string label);
     void addEdge(std::string label1, std::string label2, unsigned long weight);
     void removeEdge(std::string label1, std::string label2);

@@ -22,7 +22,7 @@ void MinHeap<T>::heapifyDown(int index) {
     int right = getRightChildIndex(index);
 
     if (left < v.size() && v[left] < v[min]) min = left;
-    if (right < v.size() && v[right] < v[min]) min = left;
+    if (right < v.size() && v[right] < v[min]) min = right;
 
     if (min != index) {
         std::swap(v[min], v[index]);
