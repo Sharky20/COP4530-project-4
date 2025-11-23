@@ -1,3 +1,5 @@
+// COP4530 Final Project Priority Queue Header
+
 #ifndef PRIORITYQUEUE_HPP
 #define PRIORITYQUEUE_HPP
 #include "MinHeap.hpp"

@@ -1,3 +1,5 @@
+// COP4530 Final Project Min Heap Header File
+
 #ifndef MINHEAP_HPP
 #define MINHEAP_HPP
 #include <vector>
