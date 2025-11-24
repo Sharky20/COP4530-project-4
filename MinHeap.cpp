@@ -3,7 +3,7 @@
 #include "MinHeap.hpp"
 #include <string>
 
-template class MinHeap<int>;
+// template initialization for needed types
 template class MinHeap<std::pair<unsigned long, std::string>>;
 
 // returns if element at given index has a left child

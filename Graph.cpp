@@ -92,11 +92,9 @@ unsigned long Graph::shortestPath(std::string startLabel, std::string endLabel, 
 
     // if path is found, set the path and return total path distance
     path.clear();
-
     for (std::string at = endLabel; at != startLabel; at = prev[at]) {
         path.push_back(at);
     }
-    
     path.push_back(startLabel);
     std::reverse(path.begin(), path.end());
     return dist[endLabel];

@@ -4,8 +4,7 @@
 #include "PriorityQueue.hpp"
 #include <string>
 
-// template initializations for using in Graph class
-template class PriorityQueue<int>;
+// template initialization for needed types
 template class PriorityQueue<std::pair<unsigned long, std::string>>;
 
 // returns if the queue is empty or not
