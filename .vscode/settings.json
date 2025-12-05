@@ -4,6 +4,8 @@
     "string": "cpp",
     "vector": "cpp",
     "array": "cpp",
-    "string_view": "cpp"
+    "string_view": "cpp",
+    "ostream": "cpp",
+    "iostream": "cpp"
   }
 }
